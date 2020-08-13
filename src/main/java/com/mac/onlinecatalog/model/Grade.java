@@ -20,7 +20,7 @@ public class Grade {
 //    relatie de Many to Many cu Students
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int gradeId;
 
     @ManyToMany(mappedBy = "grades")

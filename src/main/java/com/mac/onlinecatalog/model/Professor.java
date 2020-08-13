@@ -16,7 +16,7 @@ public class Professor {
     private String lastName;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int professorId;
     
     @ManyToOne(fetch = FetchType.LAZY)
